@@ -121,11 +121,13 @@ public class MathForKate {
 
     public static void main(String[] args) throws Exception {
 
+        MathForKate math = new MathForKate();
+        math.setMaxVal(20);
+        math.setMinVal(0);
+        math.setNumOfTasks(21);
+
         FileWriter fw = new FileWriter("MathForKate.txt");
-        fw.write(plusTwo());
-        fw.write(minusTwo());
-        fw.write(plusMinusThree());
-        fw.write(minusPlusThree());
+        fw.write(plusTwo() + minusTwo() + plusMinusThree() + minusPlusThree());
         fw.close();
     }
 }
