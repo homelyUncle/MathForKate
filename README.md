@@ -1,3 +1,3 @@
 # MathForKate
-simple programs for teaching me programming, and daughters in math
-it's generate a txt-file inclusive of math example
+Simple programs for teaching me programming, and daughters in math.
+It's generate a txt-file inclusive of math example.
