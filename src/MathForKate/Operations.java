@@ -28,7 +28,9 @@ public class Operations {
         while (i <= numOfTasks) {
             x = (int) (Math.random() * maxVal);
             y = (int) (Math.random() * maxVal);
-            if (x + y > maxVal || x == 0 || y == 0) continue;
+            if (x + y > maxVal || x == 0 || y == 0) {
+                continue;
+            }
             else {
                 if (x < 10) xStr = (x + " ");
                 else xStr = Integer.toString(x);
