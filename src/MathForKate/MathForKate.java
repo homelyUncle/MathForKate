@@ -1,12 +1,22 @@
 package MathForKate;
 
-import java.io.FileWriter;
+import javax.swing.*;
 
 public class MathForKate {
 
     private static int numOfTasks;
     private static int minVal;
     private static int maxVal;
+    private JTextArea textMaxVal;
+    private JTextField textFieldMaxVal;
+    private JTextArea textMinVal;
+    private JTextField textFieldMinVal;
+    private JTextPane textChekBoxes;
+    private JCheckBox checkBoxPlus;
+    private JCheckBox checkBoxMinus;
+    private JCheckBox checkBoxPlusMinus;
+    private JCheckBox checkBoxMinusPlus;
+    private JButton buttonGenerate;
 
     public void setNumOfTasks(int numOfTasks) {
         this.numOfTasks = numOfTasks;
@@ -119,15 +129,9 @@ public class MathForKate {
     }
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
 
-        MathForKate math = new MathForKate();
-        math.setMaxVal(20);
-        math.setMinVal(0);
-        math.setNumOfTasks(21);
 
-        FileWriter fw = new FileWriter("MathForKate.txt");
-        fw.write(plusTwo() + minusTwo() + plusMinusThree() + minusPlusThree());
-        fw.close();
+
     }
 }
