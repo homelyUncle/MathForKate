@@ -3,7 +3,7 @@
   <grid id="27dc6" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="794" height="400"/>
+      <xy x="20" y="20" width="520" height="260"/>
     </constraints>
     <properties>
       <maximumSize width="520" height="260"/>
@@ -15,8 +15,8 @@
     <children>
       <component id="d4f4d" class="javax.swing.JTextArea" binding="textMaxVal">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="50"/>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="1" use-parent-layout="false">
+            <preferred-size width="150" height="20"/>
           </grid>
         </constraints>
         <properties>
@@ -28,7 +28,7 @@
       <component id="7aad9" class="javax.swing.JTextField" binding="textFieldMaxVal">
         <constraints>
           <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
+            <preferred-size width="150" height="45"/>
           </grid>
         </constraints>
         <properties>
@@ -38,8 +38,8 @@
       </component>
       <component id="40980" class="javax.swing.JTextArea" binding="textMinVal">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="30"/>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="1" use-parent-layout="false">
+            <preferred-size width="150" height="20"/>
           </grid>
         </constraints>
         <properties>
@@ -51,7 +51,7 @@
       <component id="aada8" class="javax.swing.JTextField" binding="textFieldMinVal">
         <constraints>
           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="30"/>
+            <preferred-size width="150" height="36"/>
           </grid>
         </constraints>
         <properties>
@@ -61,8 +61,8 @@
       </component>
       <component id="58292" class="javax.swing.JTextPane" binding="textChekBoxes">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="48"/>
+          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="1" use-parent-layout="false">
+            <preferred-size width="150" height="20"/>
           </grid>
         </constraints>
         <properties>
@@ -72,7 +72,7 @@
       </component>
       <component id="7de9e" class="javax.swing.JCheckBox" binding="checkBoxPlus">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="+"/>
@@ -80,7 +80,7 @@
       </component>
       <component id="2bbf7" class="javax.swing.JCheckBox" binding="checkBoxMinus">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="-"/>
@@ -88,7 +88,7 @@
       </component>
       <component id="c2974" class="javax.swing.JCheckBox" binding="checkBoxPlusMinus">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="+ / -"/>
@@ -96,7 +96,7 @@
       </component>
       <component id="b86fd" class="javax.swing.JCheckBox" binding="checkBoxMinusPlus">
         <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="- / +"/>
@@ -104,7 +104,7 @@
       </component>
       <component id="35389" class="javax.swing.JButton" binding="buttonGenerate">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Сгенерировать примеры"/>
