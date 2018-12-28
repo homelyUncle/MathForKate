@@ -22,7 +22,7 @@ public class Operations {
     static String plusTwo() {
         int i = 1;
         int x, y;
-        String s = "";
+        String resultPlus = "";
         String xStr, yStr;
 
         while (i <= numOfTasks) {
@@ -36,18 +36,18 @@ public class Operations {
                 else xStr = Integer.toString(x);
                 if (y < 10) yStr = (y + " ");
                 else yStr = Integer.toString(y);
-                s += (xStr + " + " + yStr + " = ____      ");
-                if (i % 3 == 0 && i != 0) s = s + "\n";
+                resultPlus += (xStr + " + " + yStr + " = ____      ");
+                if (i % 3 == 0 && i != 0) resultPlus += "\n";
                 i++;
             }
         }
-        return (s + "\n");
+        return (resultPlus + "\n");
     }
 
     static String minusTwo() {
         int i = 1;
         int x, y;
-        String s = "";
+        String resultMinus = "";
         String xStr, yStr;
 
         while (i <= numOfTasks) {
@@ -59,18 +59,18 @@ public class Operations {
                 else xStr = Integer.toString(x);
                 if (y < 10) yStr = (y + " ");
                 else yStr = Integer.toString(y);
-                s += (xStr + " - " + yStr + " = ____      ");
-                if (i % 3 == 0 && i != 0) s = s + "\n";
+                resultMinus += (xStr + " - " + yStr + " = ____      ");
+                if (i % 3 == 0 && i != 0) resultMinus += "\n";
                 i++;
             }
         }
-        return (s + "\n");
+        return (resultMinus + "\n");
     }
 
     static String plusMinusThree() {
         int i = 1;
         int x, y, z;
-        String s = "";
+        String resultPlusMinus = "";
         String xStr, yStr, zStr;
 
         while (i <= numOfTasks) {
@@ -85,17 +85,17 @@ public class Operations {
                 else yStr = Integer.toString(y);
                 if (z < 10) zStr = (z + " ");
                 else zStr = Integer.toString(z);
-                s += (xStr + " + " + yStr + " - " + zStr + " = ____      ");
-                if (i % 3 == 0 && i != 0) s = s + "\n";
+                resultPlusMinus += (xStr + " + " + yStr + " - " + zStr + " = ____      ");
+                if (i % 3 == 0 && i != 0) resultPlusMinus += "\n";
                 i++;
             }
         }
-        return (s + "\n");
+        return (resultPlusMinus + "\n");
     }
     static String minusPlusThree() {
         int i = 1;
         int x, y, z;
-        String s = "";
+        String resultPlusMinus = "";
         String xStr, yStr, zStr;
 
         while (i <= numOfTasks) {
@@ -110,11 +110,11 @@ public class Operations {
                 else yStr = Integer.toString(y);
                 if (z < 10) zStr = z + " ";
                 else zStr = Integer.toString(z);
-                s += (xStr + " - " + yStr + " + " + zStr + " = ____      ");
-                if (i % 3 == 0 && i != 0) s = s + "\n";
+                resultPlusMinus += (xStr + " - " + yStr + " + " + zStr + " = ____      ");
+                if (i % 3 == 0 && i != 0) resultPlusMinus += "\n";
                 i++;
             }
         }
-        return (s + "\n");
+        return (resultPlusMinus + "\n");
     }
 }
