@@ -5,19 +5,17 @@ public class Operations {
     private static int minVal;
     private static int maxVal;
 
-
-    public void setNumOfTasks(int numOfTasks) {
-        this.numOfTasks = numOfTasks;
+    public static void setNumOfTasks(int numberOfTasks) {
+        numOfTasks = numberOfTasks;
     }
 
-    public void setMinVal(int minVal) {
-        this.minVal = minVal;
+    public static void setMinVal(int minimumVal) {
+        minVal = minimumVal;
     }
 
-    public void setMaxVal(int maxVal) {
-        this.maxVal = maxVal;
+    public static void setMaxVal(int maximumVal) {
+        maxVal = maximumVal;
     }
-
 
     static String plusTwo() {
         int i = 1;
@@ -26,11 +24,9 @@ public class Operations {
         String xStr, yStr;
 
         while (i <= numOfTasks) {
-            x = (int) (Math.random() * maxVal);
-            y = (int) (Math.random() * maxVal);
-            if (x + y > maxVal || x == 0 || y == 0) {
-                continue;
-            }
+            x = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            y = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            if (x + y > maxVal || x == 0 || y == 0) continue;
             else {
                 if (x < 10) xStr = (x + " ");
                 else xStr = Integer.toString(x);
@@ -51,8 +47,8 @@ public class Operations {
         String xStr, yStr;
 
         while (i <= numOfTasks) {
-            x = (int) (Math.random() * maxVal);
-            y = (int) (Math.random() * maxVal);
+            x = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            y = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
             if (x - y < minVal || x == 0 || y == 0) continue;
             else {
                 if (x < 10) xStr = (x + " ");
@@ -74,9 +70,9 @@ public class Operations {
         String xStr, yStr, zStr;
 
         while (i <= numOfTasks) {
-            x = (int) (Math.random() * maxVal);
-            y = (int) (Math.random() * maxVal);
-            z = (int) (Math.random() * maxVal);
+            x = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            y = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            z = (int) (Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
             if ((x + y - z) > maxVal || (x + y - z) < minVal || (x + y) > maxVal || x == 0 || y == 0 || z == 0) continue;
             else {
                 if (x < 10) xStr = (x + " ");
@@ -95,13 +91,13 @@ public class Operations {
     static String minusPlusThree() {
         int i = 1;
         int x, y, z;
-        String resultPlusMinus = "";
+        String resultMinusPlus = "";
         String xStr, yStr, zStr;
 
         while (i <= numOfTasks) {
-            x = (int)(Math.random() * maxVal);
-            y = (int)(Math.random() * maxVal);
-            z = (int)(Math.random() * maxVal);
+            x = (int)(Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            y = (int)(Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
+            z = (int)(Math.random() * (Math.abs(maxVal) - Math.abs(minVal)));
             if ((x - y + z) > maxVal || (x - y + z) < minVal || (x - y) < minVal || x == 0 || y == 0 || z == 0) continue;
             else {
                 if (x < 10) xStr = x + " ";
@@ -110,11 +106,11 @@ public class Operations {
                 else yStr = Integer.toString(y);
                 if (z < 10) zStr = z + " ";
                 else zStr = Integer.toString(z);
-                resultPlusMinus += (xStr + " - " + yStr + " + " + zStr + " = ____      ");
-                if (i % 3 == 0 && i != 0) resultPlusMinus += "\n";
+                resultMinusPlus += (xStr + " - " + yStr + " + " + zStr + " = ____      ");
+                if (i % 3 == 0 && i != 0) resultMinusPlus += "\n";
                 i++;
             }
         }
-        return (resultPlusMinus + "\n");
+        return (resultMinusPlus + "\n");
     }
 }
